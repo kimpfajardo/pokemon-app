@@ -39,8 +39,8 @@ function App() {
   return (
     <div className="App">
       <div
-        className={`h-screen w-full flex justify-center items-center fixed top-0 right-0 z-50 bg-white transition duration-300 ${
-          loading ? "opacity-100" : "opacity-0 z-0"
+        className={`h-screen w-full flex justify-center items-center fixed top-0 right-0 bg-white transition duration-300 ${
+          loading ? "opacity-100 z-50" : "opacity-0 z-0"
         }`}
       >
         <Puff
