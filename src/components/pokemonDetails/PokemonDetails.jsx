@@ -18,15 +18,15 @@ const PokemonDetails = ({ details = null }) => {
         <p className="mb-5 absolute top-0 right-0 mt-2 mr-2 transition duration-500 text-gray-200 group-hover:text-white text-3xl md:text-4xl lg:text-5xl">
           #{number}
         </p>
-        <p className="text-xs font-bold uppercase text-gray-500 group-hover:text-gray-200">
+        <p className="text-xs font-bold uppercase text-gray-400 group-hover:text-gray-200">
           Name
         </p>
         <p className="text-xs lg:text-lg mb-3">{name}</p>
-        <p className="text-xs font-bold uppercase text-gray-500 group-hover:text-gray-200">
+        <p className="text-xs font-bold uppercase text-gray-400 group-hover:text-gray-200">
           Classification
         </p>
         <p className="text-xs lg:text-lg mb-3">{classification}</p>
-        <p className="text-xs font-bold uppercase text-gray-500 group-hover:text-gray-200">
+        <p className="text-xs font-bold uppercase text-gray-400 group-hover:text-gray-200">
           Types
         </p>
         <div className="flex mb-3">
@@ -36,13 +36,13 @@ const PokemonDetails = ({ details = null }) => {
             </div>
           ))}
         </div>
-        <p className="text-xs font-bold uppercase text-gray-500 group-hover:text-gray-200">
+        <p className="text-xs font-bold uppercase text-gray-400 group-hover:text-gray-200">
           Height
         </p>
         <p className="text-xs lg:text-lg mb-3">
           {height.minimum} - {height.maximum}
         </p>
-        <p className="text-xs font-bold uppercase text-gray-500 group-hover:text-gray-200">
+        <p className="text-xs font-bold uppercase text-gray-400 group-hover:text-gray-200">
           Weight
         </p>
         <p className="text-xs lg:text-lg mb-3">
