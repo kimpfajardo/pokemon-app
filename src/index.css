@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  border-radius: 0 0 25% 25%;
+}
+
+@media (max-width: 767px) {
+  .header {
+    border-radius: 0 0 30% 30%;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .pokemon-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .pokemon-info {
+    margin-top: 20px;
+  }
+  .pokemon-img-container {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 427px) and (max-width: 640px) {
+  .pokemon-info {
+    width: 50%;
+  }
+  .pokemon-img-container {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .pokemon-img {
+    object-fit: contain;
+  }
+}
