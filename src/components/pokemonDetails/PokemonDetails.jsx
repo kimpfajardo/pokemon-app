@@ -30,8 +30,8 @@ const PokemonDetails = ({ details = null }) => {
           Types
         </p>
         <div className="flex mb-3">
-          {types.map((item) => (
-            <div className="text-xs lg:text-lg mr-2">
+          {types.map((item, index) => (
+            <div className="text-xs lg:text-lg mr-2" key={index}>
               <Type type={item} />
             </div>
           ))}

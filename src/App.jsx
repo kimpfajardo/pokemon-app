@@ -49,8 +49,6 @@ function App() {
           radius="9"
           color="gray"
           ariaLabel="three-dots-loading"
-          wrapperStyle
-          wrapperClass
         />
       </div>
       <Header title="My Favorite Pokemons" />
@@ -59,8 +57,8 @@ function App() {
         data-aos="fade-up"
         data-aos-delay="1200"
       >
-        {pokemons.map((item) => (
-          <Card color={item.name.toLowerCase() === "articuno" ? "blue" : "red"}>
+        {pokemons.map((item, index) => (
+          <Card key={index} color={item.name.toLowerCase() === "articuno" ? "blue" : "red"}>
             <PokemonDetails details={item} />
           </Card>
         ))}
